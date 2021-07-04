@@ -8,4 +8,6 @@ This repo containts codes and other materials for our Python course at [SciSchoo
 [Lecture 04: Lists](https://github.com/javadebadi/python-course/blob/master/Lecture-04-lists.ipynb)             
 [Lecture 05: Assignment 01: Variables, Strings ans Lists](https://github.com/javadebadi/python-course/blob/master/Lecture-05-Assignment-01.ipynb)             
 [Lecture 06: Boolean Types, Comparison and Logical Operators, NoneType](https://github.com/javadebadi/python-course/blob/master/Lecture-06-boolean-types-and-comparison-logical-operators.ipynb)            
+[Lecture 07: Flowchart and Control Flow (if - elif - else)](https://github.com/javadebadi/python-course/blob/master/Lecture-07-flowchart-and-control-flow.html)               
+<a href="./Lecture-07-flowchart-and-control-flow.html">Lecture 07</a>
 
