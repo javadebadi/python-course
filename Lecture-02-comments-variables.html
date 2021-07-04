@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Lecture-07-flowchart-and-control-flow</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lecture-02-comments-variables</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,85 +14259,53 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Flowchart">Flowchart<a class="anchor-link" href="#Flowchart">&#182;</a></h2><p>A flowchart is a type of diagram that represents a workflow or process. A flowchart can also be defined as a diagrammatic representation of an algorithm, a step-by-step approach to solving a task.</p>
-<p>look at <a href="https://en.wikipedia.org/wiki/Flowchart">https://en.wikipedia.org/wiki/Flowchart</a> for more information.</p>
-<table class="wikitable">
-
-<tbody><tr>
-<th>ANSI/ISO Shape
-</th>
-<th>Name
-</th>
-<th>Description
-</th></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Line.svg" class="image"><img alt="Flowchart Line.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/100px-Flowchart_Line.svg.png" decoding="async" width="100" height="19" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/150px-Flowchart_Line.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/200px-Flowchart_Line.svg.png 2x" data-file-width="320" data-file-height="60"></a>
-</td>
-<td style="text-align: center;">Flowline (Arrowhead)
-</td>
-<td>Shows the process's order of operation. A line coming from one symbol and pointing at another. Arrowheads are added if the flow is not the standard top-to-bottom, left-to right.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Terminal.svg" class="image"><img alt="Flowchart Terminal.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/150px-Flowchart_Terminal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/200px-Flowchart_Terminal.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Terminal
-</td>
-<td>Indicates the beginning and ending of a program or sub-process. They usually contain the word "Start" or "End", or another phrase signaling the start or end of a process, such as "submit inquiry" or "receive product".
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Process.svg" class="image"><img alt="Flowchart Process.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/100px-Flowchart_Process.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/150px-Flowchart_Process.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/200px-Flowchart_Process.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Process
-</td>
-<td>Represents a set of operations that changes value, form, or location of data.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Decision.svg" class="image"><img alt="Flowchart Decision.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png" decoding="async" width="100" height="75" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/150px-Flowchart_Decision.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/200px-Flowchart_Decision.svg.png 2x" data-file-width="320" data-file-height="240"></a>
-</td>
-<td style="text-align: center;">Decision
-</td>
-<td>Shows a conditional operation that determines which one of the two paths the program will take. The operation is commonly a yes/no question or true/false test. Represented as a diamond.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_IO.svg" class="image"><img alt="Flowchart IO.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/100px-Flowchart_IO.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/150px-Flowchart_IO.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/200px-Flowchart_IO.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Input/Output
-</td>
-<td>Indicates the process of inputting and outputting data, as in entering data or displaying results. Represented as a <a href="/wiki/Rhomboid" title="Rhomboid">rhomboid</a>.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Annotation.svg" class="image"><img alt="Flowchart Annotation.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/100px-Flowchart_Annotation.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/150px-Flowchart_Annotation.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/200px-Flowchart_Annotation.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Annotation (Comment)
-</td>
-<td>Indicating additional information about a step in the program. Represented as an open rectangle with a dashed or solid line connecting it to the corresponding symbol in the flowchart.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Predefined_Process.svg" class="image"><img alt="Flowchart Predefined Process.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/100px-Flowchart_Predefined_Process.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/150px-Flowchart_Predefined_Process.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/200px-Flowchart_Predefined_Process.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Predefined Process
-</td>
-<td>Shows named process which is defined elsewhere. Represented as a rectangle with double-struck vertical edges.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Connector.svg" class="image"><img alt="Flowchart Connector.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/50px-Flowchart_Connector.svg.png" decoding="async" width="50" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/75px-Flowchart_Connector.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/100px-Flowchart_Connector.svg.png 2x" data-file-width="160" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">On-page Connector
-</td>
-<td>Pairs of labeled connectors replace long or confusing lines on a flowchart page. Represented by a small circle with a letter inside.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Off_page_connector.png" class="image"><img alt="Off page connector.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Off_page_connector.png/50px-Off_page_connector.png" decoding="async" width="50" height="49" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Off_page_connector.png/75px-Off_page_connector.png 1.5x, //upload.wikimedia.org/wikipedia/commons/4/44/Off_page_connector.png 2x" data-file-width="77" data-file-height="75"></a>
-</td>
-<td style="text-align: center;">Off-page Connector
-</td>
-<td>A labeled connector for use when the target is on another page. Represented as a <a href="/wiki/Baseball_field#Home_plate" title="Baseball field">home plate</a>-shaped <a href="/wiki/Pentagon" title="Pentagon">pentagon</a>.
-</td></tr></tbody></table>
+<div style="display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #AF96F3;
+  padding: = 7px;
+            width:100%;">
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px 10px 20px;
+  display:flex; justify-content: space-between;"><div style="text-aling:left; width:80%"><h1>Lecture 02: Variables and Comments</h1></div><div style="text-align:right;width:20%;font-size: 10px;">Date: 6/21/2021</div></div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 16px;text-align: left;"><p>Author: Javad Ebadi</p></div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 14px; display:flex; justify-content: space-between;">
+      <div style="width:33.3%; text-align:left; margin:5px; padding:5px;"><p>Email: javad.ebadi.1990@gmail.com</div>
+      <div style="width:33.3%; text-align:center; margin:5px; padding:5px;"><p>Telegram: <a href="https://t.me/javadebadi1990">@javadebadi1990</a></p></div>
+      <div style="width:33.3%; text-align:right; margin:5px; padding:5px;"><p>GitHub: <a href="https://github.com/javadebadi">javadebadi</a></p></div>
+   </div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 14px;
+              text-align: left;"><p>
+      Table of Contents</p>
+      <ul>
+    <li><a href="#comments">2.1 Comments</a>
+        <ul><li><a href="#gs-comments-indent">2.1.1 Google style (comments)</a></li></ul>
+    </li>
+    <li><a href="#variables">2.2 Variables</a>
+        <ul>
+            <li><a href="#variable-define">2.2.1 Define and use variables</a></li>
+            <li><a href="#variable-name">2.2.2 Variables names</a></li>
+        </ul>
+    </li>
+</ul>
+      <b> Expected time to complete this notebook: 1 hour</b>
+</div>
+</div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Flow-chart-with-input-and-process">Flow chart with input and process<a class="anchor-link" href="#Flow-chart-with-input-and-process">&#182;</a></h3><p><img src="./images/flow-chart-example-1-2.png" width=400></p>
+<h2 id="2.1-Comments-">2.1 Comments <a id="comments" /><a class="anchor-link" href="#2.1-Comments-">&#182;</a></h2><p>Comments are lines in your code which will be ignored by compiler or interpreter. They are just lines in your code which are written for humans. Comments are used in code to explain what a piece of codes is doing. Adding brief and descriptive comments is a good practice in programming.</p>
+<p>In python comments are determined by <code>#</code> characters.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14346,8 +14314,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 1 : start - input - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># this is a comment</span>
+<span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># this is an inline comment</span>
 </pre></div>
 
      </div>
@@ -14363,50 +14331,15 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:30
-</pre>
-</div>
-</div>
 
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2</pre>
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 2 : start - input - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:25
-</pre>
-</div>
 </div>
 
 </div>
@@ -14416,7 +14349,66 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Flow-chart-with-decision">Flow chart with decision<a class="anchor-link" href="#Flow-chart-with-decision">&#182;</a></h3><p><img src="./images/flow-chart-example-3.png" width=600></p>
+<h3 id="2.1.1-Google-style-(comments)-">2.1.1 Google style (comments) <a id="gs-comments-indent" /><a class="anchor-link" href="#2.1.1-Google-style-(comments)-">&#182;</a></h3><p>Comment lines start with <code>#</code>. After <code>#</code>, insert just one space character.<br>
+For inline comments, the <code>#</code> character must be put after 2 space character from end of code.</p>
+<p style="color:red;">Wrong</p><div class="highlight"><pre><span></span><span class="c1">#        this a comment line</span>
+</pre></div>
+<p style="color:green;">Right</p><div class="highlight"><pre><span></span><span class="c1"># this is comment line</span>
+</pre></div>
+<p style="color:red;">Wrong</p><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>         <span class="c1"># this is not a correct inline code</span>
+</pre></div>
+<p style="color:red;">Wrong</p><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># this is not a correct inline code</span>
+</pre></div>
+<p style="color:green;">Right</p><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>  <span class="c1"># this is correct inline code</span>
+</pre></div>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.2-Variables-">2.2 Variables <a id="variables" /><a class="anchor-link" href="#2.2-Variables-">&#182;</a></h2><p>Varialbes are one of the most fundamental concepts in programming. Every programming langauge must support defining and working with variables.</p>
+<p>We can think of variables as a box in which we can put values.</p>
+<p>Let's assume that we want to define a variable in Python for age of person. To do this, we write</p>
+<div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</pre></div>
+<p>After this line of code is executed, Python knows a variable called  <code>age</code>. Python allocates an space in physical memory of your computer to store the value of <code>age</code> variables and puts the number <code>25</code> in that part of memory. In addition, Python uses the name <code>age</code> to refer to this part of physical memory.</p>
+<p>Every variable in Python have these properties:</p>
+<ul>
+<li>Name (identifier): <code>age</code></li>
+<li>Type: <code>int</code></li>
+<li>Value: <code>25</code></li>
+</ul>
+<p>We can change the value of a variable by using <strong>assignment operator</strong>. In Python, the assignment operator is <code>=</code>. For example, to change the value of <code>age</code> variable to <code>30</code>, we simply use <code>=</code> as follows:</p>
+<div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+<p>Variables are needed in programming, because we can store our values with meaningful names, use them in our calculations and update their values.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="2.2.1-Define-and-Use-Variables-">2.2.1 Define and Use Variables <a id="variable-define" /><a class="anchor-link" href="#2.2.1-Define-and-Use-Variables-">&#182;</a></h3><p>Let's define two variables for length and width of a rectangle, and use them to cacluate area of the rectangle</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">length</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># length of the rectangle</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># width of the rectangle</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let's check type of these variables</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14425,16 +14417,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 3 : start - input - process - decision - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14450,14 +14433,52 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:10
-age_status =  young
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>int</pre>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">width</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>int</pre>
+</div>
+
 </div>
 
 </div>
@@ -14467,22 +14488,16 @@ age_status =  young
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/flow-chart-example-3.1.png" width=600></p>
+<p>Any operation which can applied to <code>int</code> data type, can be applied to variables of type <code>int</code> too. For example, we can add two <code>int</code> data types, therefore we can add two variables of type <code>int</code>:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 3.1 : start - input - process - decision - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">length</span> <span class="o">+</span> <span class="n">width</span>
 </pre></div>
 
      </div>
@@ -14498,13 +14513,15 @@ age_status =  young
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:15
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>150</pre>
 </div>
+
 </div>
 
 </div>
@@ -14514,31 +14531,30 @@ age_status =  young
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/flow-chart-example-4-copy.png" width=800></p>
+<p>Now, we use <code>length</code> and <code>width</code> variables to calculate area of the rectangle and store the value in new variable called <code>area</code></p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">area</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">width</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 4: start - input - process - decision - decision - process - end</span>
-<span class="c1"># solution 1: using nested if</span>
-
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">decade</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;kid&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14558,8 +14574,7 @@ age_status =  young
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:50
-age_status =  old
+<pre>5000
 </pre>
 </div>
 </div>
@@ -14569,26 +14584,69 @@ age_status =  old
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>int</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Variables can be used to assign new values to them even using their own values:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 4: start - input - process - decision - decision - process - end</span>
-<span class="c1"># solution 1: using elif</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span> <span class="o">+</span> <span class="mi">100</span>
+</pre></div>
 
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
+     </div>
+</div>
+</div>
+</div>
 
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">decade</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;kid&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14608,14 +14666,363 @@ age_status =  old
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:60
-age_status =  old
+<pre>200
 </pre>
 </div>
 </div>
 
 </div>
 
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The operations such as <code>length = length + 100</code> can be written simpler in Python using `+=' operator:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">length</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+<span class="n">length</span> <span class="o">+=</span> <span class="mi">100</span>  <span class="c1"># equivalent to : length = length + 100</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>100
+200
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The same kind of operations for <code>-</code>, <code>*</code>, <code>/</code> are availabe with <code>-=</code>, <code>*=</code> and <code>%=</code> operators.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="2.2.2-Variable-Name-">2.2.2 Variable Name <a id="variable-name" /><a class="anchor-link" href="#2.2.2-Variable-Name-">&#182;</a></h3><p>Latin lowercase letters: a - z<br>
+Latin Uppercase letters: A - Z<br>
+digits: 0 - 9
+underscore: _</p>
+<p>Farsi letters: ا - ی</p>
+<p>An allowed variable name in Python must obey these rules:</p>
+<ul>
+<li>Variable names may contain letters, digits or the underscore character</li>
+<li>Variable names must begin with a letter or underscore. Either lowercase or uppercase letters are acceptable.</li>
+<li>Variable names may not be a reserved word in Python.  </li>
+</ul>
+<blockquote><p>Question: Is <code>type</code> a valid name for a variable in Python?</p>
+</blockquote>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># invalid variable name because starts with a digit</span>
+<span class="mi">1</span><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-19-53af2598759b&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">2</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    1age = 25</span>
+<span class="ansi-white-intense-fg ansi-bold">     ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># invalid variable name because the $ sign in neither letter nor digit</span>
+<span class="err">$</span><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-20-6736379babd7&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">2</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    $age = 25</span>
+<span class="ansi-white-intense-fg ansi-bold">    ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># invalid variable name because the &amp; and @ characters areneither letters nor digits</span>
+<span class="n">age</span><span class="o">&amp;@</span> <span class="o">=</span> <span class="mi">25</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-21-64ead1e4da91&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">2</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    age&amp;@ = 25</span>
+<span class="ansi-white-intense-fg ansi-bold">        ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># valid variable names</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">Age</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">age1</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">age_1</span> <span class="o">=</span> <span class="mi">26</span>
+<span class="n">_age</span> <span class="o">=</span> <span class="mi">27</span>
+<span class="n">_myAge</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Python by default use <strong>UTF-8</strong> encoding system, which means that we can define varaibes with <strong>UTF-8</strong> variables too. but, <strong>DO NOT</strong> use this kind of name for variables. For example:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">سن</span> <span class="o">=</span> <span class="mi">20</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">سن</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>20
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s1">&#39;</span><span class="se">\uFE8F</span><span class="s1">&#39;</span>  <span class="c1"># https://en.wikipedia.org/wiki/Iran_System_encoding</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;ﺏ&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To increase readibility of variable names, usually we use some of these conventions in naming our vairables:</p>
+<table>
+<thead><tr>
+<th>convention</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camel Case</td>
+<td>someAwesomeVar</td>
+</tr>
+<tr>
+<td>Snake Case</td>
+<td>some_awesome_var</td>
+</tr>
+<tr>
+<td>Pascal Case</td>
+<td>SomeAwesomeVar</td>
+</tr>
+<tr>
+<td>Upper Case Snake Case</td>
+<td>SOME_AWESOME_VAR</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># my Age </span>
+<span class="n">myAge</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># camel case</span>
+<span class="n">my_age</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># snake case</span>
+<span class="n">MyAge</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># Pascal case</span>
+<span class="n">MY_AGE</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># Upper case snake case</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
