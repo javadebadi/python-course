@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Flowchart</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Lecture-08-Loops-in-Python</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,85 +14259,56 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Flowchart">Flowchart<a class="anchor-link" href="#Flowchart">&#182;</a></h2><p>A flowchart is a type of diagram that represents a workflow or process. A flowchart can also be defined as a diagrammatic representation of an algorithm, a step-by-step approach to solving a task.</p>
-<p>look at <a href="https://en.wikipedia.org/wiki/Flowchart">https://en.wikipedia.org/wiki/Flowchart</a> for more information.</p>
-<table class="wikitable">
-
-<tbody><tr>
-<th>ANSI/ISO Shape
-</th>
-<th>Name
-</th>
-<th>Description
-</th></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Line.svg" class="image"><img alt="Flowchart Line.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/100px-Flowchart_Line.svg.png" decoding="async" width="100" height="19" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/150px-Flowchart_Line.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Flowchart_Line.svg/200px-Flowchart_Line.svg.png 2x" data-file-width="320" data-file-height="60"></a>
-</td>
-<td style="text-align: center;">Flowline (Arrowhead)
-</td>
-<td>Shows the process's order of operation. A line coming from one symbol and pointing at another. Arrowheads are added if the flow is not the standard top-to-bottom, left-to right.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Terminal.svg" class="image"><img alt="Flowchart Terminal.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/150px-Flowchart_Terminal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/200px-Flowchart_Terminal.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Terminal
-</td>
-<td>Indicates the beginning and ending of a program or sub-process. They usually contain the word "Start" or "End", or another phrase signaling the start or end of a process, such as "submit inquiry" or "receive product".
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Process.svg" class="image"><img alt="Flowchart Process.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/100px-Flowchart_Process.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/150px-Flowchart_Process.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Flowchart_Process.svg/200px-Flowchart_Process.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Process
-</td>
-<td>Represents a set of operations that changes value, form, or location of data.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Decision.svg" class="image"><img alt="Flowchart Decision.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png" decoding="async" width="100" height="75" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/150px-Flowchart_Decision.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Flowchart_Decision.svg/200px-Flowchart_Decision.svg.png 2x" data-file-width="320" data-file-height="240"></a>
-</td>
-<td style="text-align: center;">Decision
-</td>
-<td>Shows a conditional operation that determines which one of the two paths the program will take. The operation is commonly a yes/no question or true/false test. Represented as a diamond.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_IO.svg" class="image"><img alt="Flowchart IO.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/100px-Flowchart_IO.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/150px-Flowchart_IO.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Flowchart_IO.svg/200px-Flowchart_IO.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Input/Output
-</td>
-<td>Indicates the process of inputting and outputting data, as in entering data or displaying results. Represented as a <a href="/wiki/Rhomboid" title="Rhomboid">rhomboid</a>.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Annotation.svg" class="image"><img alt="Flowchart Annotation.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/100px-Flowchart_Annotation.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/150px-Flowchart_Annotation.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Flowchart_Annotation.svg/200px-Flowchart_Annotation.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Annotation (Comment)
-</td>
-<td>Indicating additional information about a step in the program. Represented as an open rectangle with a dashed or solid line connecting it to the corresponding symbol in the flowchart.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Predefined_Process.svg" class="image"><img alt="Flowchart Predefined Process.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/100px-Flowchart_Predefined_Process.svg.png" decoding="async" width="100" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/150px-Flowchart_Predefined_Process.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/Flowchart_Predefined_Process.svg/200px-Flowchart_Predefined_Process.svg.png 2x" data-file-width="320" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">Predefined Process
-</td>
-<td>Shows named process which is defined elsewhere. Represented as a rectangle with double-struck vertical edges.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Flowchart_Connector.svg" class="image"><img alt="Flowchart Connector.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/50px-Flowchart_Connector.svg.png" decoding="async" width="50" height="50" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/75px-Flowchart_Connector.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flowchart_Connector.svg/100px-Flowchart_Connector.svg.png 2x" data-file-width="160" data-file-height="160"></a>
-</td>
-<td style="text-align: center;">On-page Connector
-</td>
-<td>Pairs of labeled connectors replace long or confusing lines on a flowchart page. Represented by a small circle with a letter inside.
-</td></tr>
-<tr>
-<td style="text-align: center;"><a href="/wiki/File:Off_page_connector.png" class="image"><img alt="Off page connector.png" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Off_page_connector.png/50px-Off_page_connector.png" decoding="async" width="50" height="49" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Off_page_connector.png/75px-Off_page_connector.png 1.5x, //upload.wikimedia.org/wikipedia/commons/4/44/Off_page_connector.png 2x" data-file-width="77" data-file-height="75"></a>
-</td>
-<td style="text-align: center;">Off-page Connector
-</td>
-<td>A labeled connector for use when the target is on another page. Represented as a <a href="/wiki/Baseball_field#Home_plate" title="Baseball field">home plate</a>-shaped <a href="/wiki/Pentagon" title="Pentagon">pentagon</a>.
-</td></tr></tbody></table>
+<div style="display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #AF96F3;
+  padding: = 7px;
+            width:100%;">
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px 10px 20px;
+  display:flex; justify-content: space-between;"><div style="text-aling:left; width:80%"><h1>Lecture 08: Loops in Python</h1></div><div style="text-align:right;width:20%;font-size: 10px;">Date: 07/05/2021</div></div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 16px;text-align: left;"><p>Author: Javad Ebadi</p></div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 14px; display:flex; justify-content: space-between;">
+      <div style="width:33.3%; text-align:left; margin:5px; padding:5px;"><p>Email: javad.ebadi.1990@gmail.com</div>
+      <div style="width:33.3%; text-align:center; margin:5px; padding:5px;"><p>Telegram: <a href="https://t.me/javadebadi1990">@javadebadi1990</a></p></div>
+      <div style="width:33.3%; text-align:right; margin:5px; padding:5px;"><p>GitHub: <a href="https://github.com/javadebadi">javadebadi</a></p></div>
+   </div>
+  <div style="background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 14px;
+              text-align: left;"><p>
+      Table of Contents</p>
+<ul>
+    <li><a href="#flowchar-loop">8.1 Flowchart with a loop</a>
+    <li><a href="#function-range">8.2 range</a>
+        <li><a href="#for-loop">8.3 for loop</a>
+            <ul>
+                <li><a href="#function-enumerate">8.3.1 enumerate</a></li>
+            </ul>
+    <li><a href="#loop-break-continue">8.4 break and continue</a></li>
+    <ul>
+        <li><a href="#loop-break">8.4.1 break</a></li>
+        <li><a href="#loop-continue">8.4.2 continue</a></li>
+    </ul>
+    <li><a href="#pass-statements">8.5 pass statements</a></li>
+    <li><a href="#anonymous-for-loop-variable">8.6 Anonymous for loop variable</a></li>
+</ul>
+      <b> Expected time to complete this notebook: 1 hour</b>
+</div>
+</div>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Flow-chart-with-input-and-process">Flow chart with input and process<a class="anchor-link" href="#Flow-chart-with-input-and-process">&#182;</a></h3><p><img src="./images/flow-chart-example-1-2.png" width=400></p>
+<h2 id="8.1-Flowchart-with-a-loop-">8.1 Flowchart with a loop <a id="flowchar-loop" /><a class="anchor-link" href="#8.1-Flowchart-with-a-loop-">&#182;</a></h2><p><img src="./images/flow-chart-loop.svg" width="500"></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14346,8 +14317,13 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 1 : start - input - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print positive integers smaller than given input</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter a positive integer:&quot;</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">number</span> <span class="o">-=</span> <span class="mi">1</span>
 </pre></div>
 
      </div>
@@ -14367,8 +14343,8 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:30
-</pre>
+<pre>Please enter a positive integer:10
+10 9 8 7 6 5 4 3 2 1 </pre>
 </div>
 </div>
 
@@ -14376,15 +14352,19 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2>8.2 range function <id a="function-range">&lt;/a&gt;</h2>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 2 : start - input - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># returns a range iterable for numbers from 0 (included) to 10 (excluded)</span>
 </pre></div>
 
      </div>
@@ -14400,41 +14380,29 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:25
-</pre>
-</div>
-</div>
 
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>range(0, 10)</pre>
 </div>
 
 </div>
 
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Flow-chart-with-decision">Flow chart with decision<a class="anchor-link" href="#Flow-chart-with-decision">&#182;</a></h3><p><img src="./images/flow-chart-example-3.png" width=400></p>
 
 </div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 3 : start - input - process - decision - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iterable</span>
+<span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
 </pre></div>
 
      </div>
@@ -14450,39 +14418,28 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:10
-age_status =  young
-</pre>
-</div>
-</div>
 
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</pre>
 </div>
 
 </div>
 
 </div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/flow-chart-example-3.1.png" width=400></p>
 
 </div>
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 3.1 : start - input - process - decision - process - end</span>
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)]</span> <span class="c1"># returns a range iterable for numbers from 5 (included) to 10 (excluded)</span>
 </pre></div>
 
      </div>
@@ -14498,13 +14455,167 @@ age_status =  young
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:15
-</pre>
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[5, 6, 7, 8, 9]</pre>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns a range iterable for numbers from 5 (included) to 10 (excluded) with steps of 2</span>
+<span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[0, 2, 4, 6, 8]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns a range iterable for numbers from -100 (included) to -50 (excluded) with steps of 10</span>
+<span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[-100, -90, -80, -70, -60]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns a range iterable for numbers from -100 (included) to -50 (excluded) with steps of -10</span>
+<span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns a range iterable for numbers from -50 (included) to -100 (excluded) with steps of -10</span>
+<span class="p">[</span><span class="o">*</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[-50, -60, -70, -80, -90]</pre>
+</div>
+
 </div>
 
 </div>
@@ -14514,31 +14625,102 @@ age_status =  young
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img src="./images/flow-chart-example-4-copy.png" width=800></p>
+<p>for <strong>iterable</strong>s in Python we can do iterations and we can give them to functions which take iterables as argumetns such as <code>sum</code></p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 4: start - input - process - decision - decision - process - end</span>
-<span class="c1"># solution 1: using nested if</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</pre></div>
 
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
+     </div>
+</div>
+</div>
+</div>
 
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">decade</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;kid&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>6</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>6</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="8.3-for-loop-">8.3 for loop <a id="for-loop" /><a class="anchor-link" href="#8.3-for-loop-">&#182;</a></h2><p>In python we use <code>for</code> keyword to write for loops.</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="o">&lt;</span><span class="n">item</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">iterable</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="n">process</span> <span class="mi">1</span>
+    <span class="n">process</span> <span class="mi">2</span>
+    <span class="n">process</span> <span class="mi">3</span>
+</pre></div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14558,9 +14740,7 @@ age_status =  young
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:50
-age_status =  old
-</pre>
+<pre>0, 1, 4, 9, 16, 25, 36, 49, 64, 81, </pre>
 </div>
 </div>
 
@@ -14574,21 +14754,10 @@ age_status =  old
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Flowchart example 4: start - input - process - decision - decision - process - end</span>
-<span class="c1"># solution 1: using elif</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scientists</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Einstein&quot;</span><span class="p">,</span> <span class="s2">&quot;Newton&quot;</span><span class="p">,</span> <span class="s2">&quot;Tukey&quot;</span><span class="p">,</span> <span class="s2">&quot;Khayyam&quot;</span><span class="p">]</span>
 
-<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age:&quot;</span><span class="p">)</span>
-<span class="n">decade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">//</span> <span class="mi">10</span>
-
-<span class="k">if</span> <span class="n">decade</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;old&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">decade</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;kid&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">age_status</span> <span class="o">=</span> <span class="s2">&quot;young&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age_status = &quot;</span><span class="p">,</span> <span class="n">age_status</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">scientist</span> <span class="ow">in</span> <span class="n">scientists</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi &quot;</span> <span class="o">+</span> <span class="n">scientist</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14608,8 +14777,331 @@ age_status =  old
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Please enter your age:60
-age_status =  old
+<pre>Hi Einstein
+Hi Newton
+Hi Tukey
+Hi Khayyam
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">scientists</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Einstein&quot;</span><span class="p">,</span> <span class="s2">&quot;Newton&quot;</span><span class="p">,</span> <span class="s2">&quot;Tukey&quot;</span><span class="p">,</span> <span class="s2">&quot;Khayyam&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scientists</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi &quot;</span> <span class="o">+</span> <span class="n">scientists</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Hi Einstein
+Hi Newton
+Hi Tukey
+Hi Khayyam
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="8.3.1-enumerate-function-">8.3.1 enumerate function <a id="function-enumerate" /><a class="anchor-link" href="#8.3.1-enumerate-function-">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="o">*</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">scientists</span><span class="p">)]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[(0, &#39;Einstein&#39;), (1, &#39;Newton&#39;), (2, &#39;Tukey&#39;), (3, &#39;Khayyam&#39;)]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">scientist</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">scientists</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;scientist at index &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="n">scientist</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>scientist at index 0 is Einstein
+scientist at index 1 is Newton
+scientist at index 2 is Tukey
+scientist at index 3 is Khayyam
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="8.4-break-and-continue-">8.4 break and continue <a id="loop-break-continue" /><a class="anchor-link" href="#8.4-break-and-continue-">&#182;</a></h2><p>Python has to keywords <code>break</code> and <code>continue</code> which can be used insided loop.<br>
+When Python reaches to <code>break</code> inside a loop, it immediately gets out the loop.<br>
+When Python reaches to <code>continue</code> inside a loop, it stops executing the lines below and starts the next iteration in the loop.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="8.4.1-break-">8.4.1 break <a id="loop-break" /><a class="anchor-link" href="#8.4.1-break-">&#182;</a></h3><p><img src="./images/flow-chart-break.svg" width="500"></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="k">break</span>
+    
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, </pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="8.4.2-continue-">8.4.2 continue <a id="loop-continue" /><a class="anchor-link" href="#8.4.2-continue-">&#182;</a></h3><p><img src="./images/flow-chart-continue.svg" width="500"></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even number occured:&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loop number = &quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-----------------------&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Even number occured: 0
+Loop number = 1
+-----------------------
+Even number occured: 2
+Loop number = 3
+-----------------------
+Even number occured: 4
+Loop number = 5
+-----------------------
+Even number occured: 6
+Loop number = 7
+-----------------------
+Even number occured: 8
+Loop number = 9
+-----------------------
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="8.5-pass-statements-">8.5 pass statements <a id="pass-statements" /><a class="anchor-link" href="#8.5-pass-statements-">&#182;</a></h2><p>Python has a special keyworkd <code>pass</code>which means to do nothing</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">pass</span>  <span class="c1"># complete this line of code later</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+    <span class="k">pass</span>  <span class="c1"># implement this function later</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="8.6-Anonymous-for-loop-variable-">8.6 Anonymous for loop variable <a id="anonymous-for-loop-variable" /><a class="anchor-link" href="#8.6-Anonymous-for-loop-variable-">&#182;</a></h2>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
 </pre>
 </div>
 </div>
