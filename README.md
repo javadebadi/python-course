@@ -9,4 +9,8 @@ This repo containts codes and other materials for our Python course at [SciSchoo
 <a href="./Lecture-05-Assignment-01.html">Lecture 05: Assignment 01: Variables, Strings ans Lists</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-05-Assignment-01.ipynb">Notebook</a>]                          
 <a href="./Lecture-06-boolean-types-and-comparison-logical-operators.html">Lecture 06: Boolean Types, Comparison and Logical Operators, NoneType</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-06-boolean-types-and-comparison-logical-operators.ipynb">Notebook</a>]                             
 <a href="./Lecture-07-flowchart-and-control-flow.html">Lecture 07: Flowchart and Control Flow (if - elif - else)</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-07-flowchart-and-control-flow.ipynb">Notebook</a>]                   
-<a href="./Lecture-08-Loops-in-Python.html">Lecture 08: Loops</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-08-Loops-in-Python.ipynb">Notebook</a>]                   
+<a href="./Lecture-08-Loops-in-Python.html">Lecture 08: Loops</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-08-Loops-in-Python.ipynb">Notebook</a>]                                  
+<a href="./Lecture-10-Functions.html">Lecture 10: Functions</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-10-Functions.ipynb">Notebook</a>]                                        
+<a href="./Lecture-11-Functions-examples.html">Lecture 11: Functions Examples</a> [<a href="https://github.com/javadebadi/python-course/blob/master/Lecture-11-Functions-examples.ipynb">Notebook</a>]             
+
+
